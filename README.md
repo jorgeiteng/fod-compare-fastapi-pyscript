@@ -1,7 +1,8 @@
 # fod-compare-fastapi-pyscript
 Pycon Challenge 2023
 
-##Tech Stack
+
+## Tech Stack
 Client: PyScript, HTML, JS, CSS.
 Server: FastAPI on AWS
 
@@ -12,11 +13,11 @@ Please note that this demo utilizes sample data. If you intend to work with actu
 The JSON file on the Backend can be generated with FoD-Compare.
 https://github.com/youngcs97/FoD-Compare
 
-##Demo
+## Demo
 You can access the demo from:
 http://ec2-3-83-252-34.compute-1.amazonaws.com/
 
-##Installation and running
+## Installation and running
 
 Server:
 Install the dependencies and run FASTAPI
