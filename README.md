@@ -26,15 +26,24 @@ Install the dependencies and run FASTAPI
 pip install -r requirements.txt
 uvicorn fod-sample-info:app --host 0.0.0.0 --port 8000 --reload
 ```
-
+Another option is to use the Dockerfile:
+```console
+ docker build . --tag api.fod:2023
+ docker run -d -p 8000:8000 api.fod:2023
+```
 ### Client:
 The frontend is HTML, so any webserver would work. You can use Python builtin web server.
 
 ```console
 cd web
-python -m http.server -b 0.0.0.0 5050
+python -m http.server -b 0.0.0.0 80
 ```
-
+Or use the Dockerfile:
+```console
+ docker build -t fronted-fod .
+ docker run -d -p 80:80 fronted-fod
+ ```
+ 
 ## To Do 
 To work with real scan results, the module for converting the JSON format is required.
 
