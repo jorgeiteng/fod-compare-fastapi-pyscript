@@ -1,3 +1,5 @@
+#Based on https://github.com/youngcs97/FoD-Compare
+
 import json
 import requests
 import csv
