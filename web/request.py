@@ -1,3 +1,6 @@
+# fod-compare-fastapi-pyscript request
+# This is required to prevet the client to reload
+
 from pyodide.http import pyfetch, FetchResponse
 from typing import Optional, Any
 
