@@ -39,8 +39,6 @@ python -m http.server -b 0.0.0.0 5050
 To work with actual scan results, the module for converting the JSON format is required.
 
 ## Credits
-### FastAPI - https://fastapi.tiangolo.com/lo/
-### Pyscript Exmaple - https://pyscript.net/examples/todo.html
-### FoD Compare by Chris Young - https://github.com/youngcs97/FoD-Compare
-
-
+- FastAPI - https://fastapi.tiangolo.com/lo/
+- Pyscript Exmaple - https://pyscript.net/examples/todo.html
+- FoD Compare by Chris Young - https://github.com/youngcs97/FoD-Compare
