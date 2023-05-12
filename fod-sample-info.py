@@ -1,3 +1,5 @@
+# fod-compare-fastapi-pyscript API
+
 import json
 from fastapi import FastAPI, Form, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -32,26 +34,27 @@ async def generate_differences(release_ids: dict):
         return {"message": "Both releaseid1 and releaseid2 are required."}
 
     try:
+	# Check Release IDs are integers
         releaseid1 = int(releaseid1)
         releaseid2 = int(releaseid2)
     except ValueError:
         return {"message": "releaseid1 and releaseid2 must be valid integers."}
 	
+	# ToDo: the module for converting the JSON format is required.
+	# This is required to work with real scan results 
     differences = {
         "name": "Issue 34",
         "differences": releaseid2 - releaseid1
     }
-
 	# Save to file
     with open("differences2.json", "w") as file:
         json.dump(differences, file)
             
-	# I can't use real data. Populate with sample Differences from my saved json
+	# I can't use real data in a public repo. Populate with sample Differences from my saved json
     with open('differences4.json', 'r') as file:
         differences = json.load(file)
 
     return JSONResponse(content=differences)
-    #return differences
 
 @app.get("/")
 async def index(request: Request):
