@@ -1,8 +1,7 @@
+# fod-compare-fastapi-pyscript utils
 import requests
 import json
 import os
-#import pyodide
-#import pyodide_http
 from request import request  # import our request function.
 from datetime import datetime as dt
 import asyncio
