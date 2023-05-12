@@ -1,0 +1,11 @@
+{
+	"releaseid1": 6395564,
+	"releaseid2": 6395413,
+	"project": "PetClinic",
+	"files": [
+	  "Owner.java",
+	  "Specialty.java",
+	  "AbstractTraceAspect.java"
+	]
+  }
+  
