@@ -31,8 +31,10 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 Client:
 The frontend is HTML, so any webserver would work. You can use Python builtin web server.
 
+```console
 cd web
 python -m http.server -b 0.0.0.0 5050
+```
 
 To Do: 
 To work with actual scan results, the module for converting the JSON format is required.
