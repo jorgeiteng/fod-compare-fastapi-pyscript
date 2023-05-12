@@ -36,7 +36,7 @@ python -m http.server -b 0.0.0.0 5050
 ```
 
 ## To Do 
-To work with actual scan results, the module for converting the JSON format is required.
+To work with real scan results, the module for converting the JSON format is required.
 
 ## Credits
 - FastAPI - https://fastapi.tiangolo.com/lo/
