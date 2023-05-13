@@ -15,7 +15,10 @@ templates = Jinja2Templates(directory="web")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # You should specify your actual origins here
+    allow_origins=[
+        "http://ec2-3-83-252-34.compute-1.amazonaws.com",
+        "http://3.83.252.34",
+    ],  # You should specify your actual origins here
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
