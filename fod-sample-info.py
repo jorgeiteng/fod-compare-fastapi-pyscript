@@ -56,9 +56,9 @@ async def generate_differences(release_ids: dict):
 
     return JSONResponse(content=differences)
 
-@app.get("/")
-async def index(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+#@app.get("/")
+#async def index(request: Request):
+#    return templates.TemplateResponse("index.html", {"request": request})
 
 if __name__ == "__main__":
     import uvicorn
