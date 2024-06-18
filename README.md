@@ -6,9 +6,9 @@ Pycon Challenge 2023
 Client: PyScript, HTML, JS, CSS.
 Server: FastAPI on AWS
 
-This PoC was created to compare two scans from Fortify on Demand (FoD). It will retrieve the results and generate tasks for the files that have changes to be addressed.
+This PoC was created to compare two scans from Fortify on Demand (FoD). It will retrieve the results and generate tasks for the files with changes to address.
 
-Please note that this demo utilizes sample data. If you intend to work with actual scans, you will need to provide your own FoD keys in the **.config.json** file.
+Just so you know, this demo uses sample data. If you intend to work with actual scans, you will need to provide your own FoD keys in the **.config.json** file.
 
 The JSON file on the Backend can be generated with FoD-Compare.
 https://github.com/youngcs97/FoD-Compare
@@ -49,6 +49,6 @@ To work with real scan results, the module for converting the JSON format is req
 
 ## Credits
 - FastAPI - https://fastapi.tiangolo.com/lo/
-- Pyscript Exmaple - https://pyscript.net/examples/todo.html
+- Pyscript Example - https://pyscript.net/examples/todo.html
 - FoD Compare by Chris Young - https://github.com/youngcs97/FoD-Compare
 - Challenge_pycon2023 Demo - https://bitbucket.org/endava-pycon2023/challenge_pycon2023/src/master/
